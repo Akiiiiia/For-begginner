@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbeller</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .chat-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+        }
+        .chat-header {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+        .message {
+            background-color: #e8f0fe;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .message.user {
+            background-color: #d1f7c4;
+            text-align: right;
+        }
+        .input-container {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .input-container input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .input-container button {
+            padding: 10px 20px;
+            background-color: #4a90e2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .input-container button:hover {
+            background-color: #357ab9;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">杠铃神教</div>
+        <div class="message user">你好，Barbeller！</div>
+        <div class="message">开始你今天的训练吧</div>
+        <div class="input-container">
+            <input type="text" placeholder="选择你的训练">
+            <button>确认</button>
+        </div>
+    </div>
+</body>
+</html>
